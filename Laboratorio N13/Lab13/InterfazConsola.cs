@@ -42,9 +42,17 @@ namespace Laboratorio_N13.Lab13
 
             Console.Write(texto);
             int satisfaccion = calculos.getEntero("Ingrese una opción: ", texto);
-            DatosEncuestados[contador] = satisfaccion;
-            contador++;
-            return NivelSatifaccion();
+            if (satisfaccion <= 5 && satisfaccion > 0)
+            {
+                DatosEncuestados[contador] = satisfaccion;
+                contador++;
+                return NivelSatifaccion();
+            }
+            else
+            {
+                Console.Clear();
+                return RealizarEncuesta();
+            } 
         }
 
         public static int NivelSatifaccion()
