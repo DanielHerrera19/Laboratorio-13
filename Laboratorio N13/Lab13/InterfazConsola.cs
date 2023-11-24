@@ -85,7 +85,7 @@ namespace Laboratorio_N13.Lab13
 
             if (contador == 0)
             {
-                Console.WriteLine("No extisten notas");
+                Console.WriteLine("No existen datos");
             }
 
             for (int i = 0; i < contador; i++)
@@ -226,7 +226,7 @@ namespace Laboratorio_N13.Lab13
 
             if (contador == 0)
             {
-                Console.WriteLine("No extisten datos");
+                Console.WriteLine("No existen datos");
             }
 
             for (int i = 0; i < contador; i++)
